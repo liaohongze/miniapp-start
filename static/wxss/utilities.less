@@ -1,0 +1,214 @@
+.func(@val) when (@val<=51) {
+  .font-@{val} {
+    font-size: unit(@val, rpx) !important;
+  }
+
+  .pt-@{val} {
+    padding-top: unit(@val, rpx) !important;
+  }
+
+  .pr-@{val} {
+    padding-right: unit(@val, rpx) !important;
+  }
+
+  .pb-@{val} {
+    padding-bottom: unit(@val, rpx) !important;
+  }
+
+  .pl-@{val} {
+    padding-left: unit(@val, rpx) !important;
+  }
+
+  .pd-@{val} {
+    padding: unit(@val, rpx);
+  }
+
+  .mg-@{val} {
+    margin: unit(@val, rpx);
+  }
+
+  .ml-@{val} {
+    margin-left: unit(@val, rpx) !important;
+  }
+
+  .mr-@{val} {
+    margin-right: unit(@val, rpx) !important;
+  }
+
+  .mb-@{val} {
+    margin-bottom: unit(@val, rpx) !important;
+  }
+
+  .mt-@{val} {
+    margin-top: unit(@val, rpx) !important;
+  }
+
+  .radius-@{val} {
+    border-radius: unit(@val, rpx) !important;
+  }
+
+  .block-@{val} {
+    height: unit(@val, rpx) !important;
+  }
+
+  .func(@val+1);
+}
+
+.func(1);
+
+.hidden {
+  display: none !important;
+}
+
+// flex
+/** 水平垂直居中*/
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+// flex结束
+
+// 文字对齐
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+// 文字对齐结束
+
+// 文字超出隐藏
+.text-hidden {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.font-blod {
+  font-weight: bold;
+}
+
+.vertical-top {
+  vertical-align: top;
+}
+
+.vertical-middle {
+  vertical-align: middle;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+.line-through {
+  text-decoration: line-through
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.p_r {
+  position: relative;
+}
+
+.p_a {
+  position: absolute;
+}
+
+.absoluteCC {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-shadow {
+  box-shadow: 0 0rpx 10rpx #ccc;
+
+  &.top {
+    box-shadow: 0 -1rpx 10rpx #ccc;
+  }
+
+  &.right {
+    box-shadow: 1rpx 0 10rpx #ccc;
+  }
+
+  &.bottom {
+    box-shadow: 0 1rpx 10rpx #ccc;
+  }
+
+  &.left {
+    box-shadow: -1rpx 0 10rpx #ccc;
+  }
+}
+
+.layer_wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  .bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .content_wrap {
+    position: absolute;
+  }
+}

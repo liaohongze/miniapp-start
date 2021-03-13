@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/index",
+    "pages/filePack/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#02AEEF",
+    "navigationBarTitleText": "广告人·干货库",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#BCBEC0",
+    "selectedColor": "#02AEEF",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "干货库",
+        "iconPath": "/static/images/tabbar/file.png",
+        "selectedIconPath": "/static/images/tabbar/file_active.png"
+      },
+      {
+        "pagePath": "pages/filePack/index",
+        "text": "打包文档",
+        "iconPath": "/static/images/tabbar/pack.png",
+        "selectedIconPath": "/static/images/tabbar/pack_active.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的",
+        "iconPath": "/static/images/tabbar/user.png",
+        "selectedIconPath": "/static/images/tabbar/user_active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}
